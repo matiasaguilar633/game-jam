@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://d2nyttc60sppa"]
+
+[ext_resource type="Texture2D" uid="uid://bcvop682ntgfy" path="res://art/assestsCompletos/Sprites/Light Bandit/Attack/LightBandit_Attack_0.png" id="1_2btya"]
+[ext_resource type="Texture2D" uid="uid://brgeimln3gmmk" path="res://art/assestsCompletos/Sprites/Light Bandit/Attack/LightBandit_Attack_1.png" id="2_6ys1q"]
+[ext_resource type="Texture2D" uid="uid://cu50oj2ciyhfu" path="res://art/assestsCompletos/Sprites/Light Bandit/Attack/LightBandit_Attack_2.png" id="3_7dbtj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ank2o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2btya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6ys1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7dbtj")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=391144926]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1199239836]
+sprite_frames = SubResource("SpriteFrames_ank2o")
+animation = &"attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=380335607]

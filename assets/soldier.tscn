@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://snbsoyks0jyj"]
+
+[ext_resource type="Texture2D" uid="uid://ccvj35w5rtv07" path="res://assets/HeavyBandit2.png" id="1_1vtno"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mql08"]
+atlas = ExtResource("1_1vtno")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1caw"]
+atlas = ExtResource("1_1vtno")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7l2e6"]
+atlas = ExtResource("1_1vtno")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqpoe"]
+atlas = ExtResource("1_1vtno")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_adkn2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mql08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1caw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7l2e6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqpoe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=967356787]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1309075008]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1994296420]
+sprite_frames = SubResource("SpriteFrames_adkn2")
+frame_progress = 0.13920519
+
+[node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=1130646286]

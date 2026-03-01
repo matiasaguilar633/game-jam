@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dbilc6yqnluv7"]
+
+[ext_resource type="Script" uid="uid://bekdkmtxvpr5o" path="res://scripts/time.gd" id="1_5ior0"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1247979726]
+script = ExtResource("1_5ior0")
+
+[node name="Tiempolabel" type="Label" parent="." unique_id=140047841]
+offset_left = 27.0
+offset_top = 20.0
+offset_right = 91.0
+offset_bottom = 43.0
+text = "00:00:00"

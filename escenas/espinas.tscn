@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ddwiwof4ro51t"]
+
+[ext_resource type="Texture2D" uid="uid://k87t0tfttyr6" path="res://TX Village Props.png" id="1_mp0i8"]
+[ext_resource type="PackedScene" uid="uid://bnkfccxedgf4m" path="res://escenas/killzone.tscn" id="2_0s4bd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0s4bd"]
+size = Vector2(42, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jk3ia"]
+size = Vector2(42.5, 15)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=1117536479]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1265087554]
+scale = Vector2(1.2714286, 1.4285715)
+texture = ExtResource("1_mp0i8")
+region_enabled = true
+region_rect = Rect2(797.65576, 114.92821, 35.9718, 14.5325775)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1883690051]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_0s4bd")
+
+[node name="Node2D" parent="." unique_id=3921986 instance=ExtResource("2_0s4bd")]
+script = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D" unique_id=1585263317]
+position = Vector2(0.25, 0.5)
+shape = SubResource("RectangleShape2D_jk3ia")

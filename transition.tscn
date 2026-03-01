@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dar76jhug0wvg"]
+
+[ext_resource type="Texture2D" uid="uid://k87t0tfttyr6" path="res://TX Village Props.png" id="1_2gi1b"]
+[ext_resource type="Script" uid="uid://dbhne475qrhj1" path="res://transition.gd" id="1_pj2mc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pj2mc"]
+size = Vector2(58, 20)
+
+[node name="Area2D" type="Area2D" unique_id=1268607192]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("1_pj2mc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=932522548]
+texture = ExtResource("1_2gi1b")
+region_enabled = true
+region_rect = Rect2(351.5877, 261.056, 65.5105, 29.823853)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=690064817]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_pj2mc")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
