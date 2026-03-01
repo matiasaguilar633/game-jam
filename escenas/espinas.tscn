@@ -25,5 +25,5 @@ shape = SubResource("RectangleShape2D_0s4bd")
 script = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D" unique_id=1585263317]
-position = Vector2(0.25, 0.5)
+position = Vector2(4, 16)
 shape = SubResource("RectangleShape2D_jk3ia")

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://2dhpybyfqe7i" path="res://Textures-16.png" id="1_32c87"]
 [ext_resource type="PackedScene" uid="uid://dhpeflj6v28vq" path="res://escenas/escena_idele.tscn" id="2_hu8wi"]
 [ext_resource type="PackedScene" uid="uid://dp6bx7scq1jv1" path="res://escenas/transition2.tscn" id="3_x2gyc"]
+[ext_resource type="Texture2D" uid="uid://dtojf20ug1s6m" path="res://WhatsApp Image 2026-03-01 at 10.10.16 AM (5).jpeg" id="4_x4g6p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hu8wi"]
 texture = ExtResource("1_32c87")
@@ -885,6 +886,24 @@ position = Vector2(83, 618)
 [node name="Area2D" parent="." unique_id=1268607192 instance=ExtResource("3_x2gyc")]
 position = Vector2(2199, 567)
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=681463678]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="TextureRect" type="TextureRect" parent="." unique_id=142449179]
+z_index = -1
+offset_right = 1308.0
+offset_bottom = 793.0
+texture = ExtResource("4_x4g6p")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect" unique_id=1832173495]
+z_index = -1
+layout_mode = 0
+offset_left = 1308.0
+offset_right = 2616.0
+offset_bottom = 793.0
+texture = ExtResource("4_x4g6p")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/TextureRect" unique_id=66127401]
+z_index = -1
+layout_mode = 0
+offset_left = -2617.0
+offset_right = -1309.0
+offset_bottom = 793.0
+texture = ExtResource("4_x4g6p")

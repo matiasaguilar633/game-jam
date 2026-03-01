@@ -1,12 +1,5 @@
 [gd_scene format=3 uid="uid://xsxvw7cs15qe"]
 
-[ext_resource type="PackedScene" uid="uid://dhpeflj6v28vq" path="res://escenas/escena_idele.tscn" id="1_ig13g"]
+[ext_resource type="PackedScene" uid="uid://xsxvw7cs15qe" path="res://escenas/player_idele.tscn" id="1_ig13g"]
 
 [node name="player_idele" unique_id=1146673404 instance=ExtResource("1_ig13g")]
-
-[node name="Hurtbox" parent="." index="2" unique_id=1709878969]
-collision_layer = 11
-collision_mask = 7
-
-[node name="CollisionShape2D" parent="." index="3" unique_id=448642570]
-position = Vector2(4.9999924, -14.999992)
